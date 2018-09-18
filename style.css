@@ -10,6 +10,6 @@ a:hover { color: blue;text-decoration: none;}
 .contact {list-style-type: none;}
 .contact img{list-style-type: none;}
 
-.pointti {margin-bottom: 3ex; margin-top: 3ex;box-sizing: border-box; }
+.pointti {margin-bottom: 3ex; margin-top: 3ex;box-sizing: border-box; border-bottom: solid 1px lightgray; }
 .line {border-top: 1px solid lightgray; padding-bottom: 10px;}
 .fig {float: left; padding: 10px 10px 0 0;}
