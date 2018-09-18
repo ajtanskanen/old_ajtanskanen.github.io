@@ -1,0 +1,15 @@
+a:link,a:visited,a:active { color: grey;text-decoration: none;}
+a:hover { color: blue;text-decoration: none;}
+.otsake {width: 100%; background-color: orange; padding: 10px 10% 10px 10%; font-size: 18px; font-color: gray; margin-bottom: 20px;margin-left:0;margin-top:0;margin-right:0;box-sizing:border-box; font-size: 25px;} 
+.pvm {font: italic; font-color: grey; font-size: 15px;} 
+.otsikko {font-size: 20px; font-weight: bold;} 
+.about {float: right;}
+.footteri {position: bottom; background-color: white; margin-top: 1ex; padding: 0 10% 0 10%; padding-top:10px;} 
+.leipateksti {width: 100%; padding: 0 10% 0 10%;box-sizing: border-box;} 
+.icon {width: 16px; height: 16px;} 
+.contact {list-style-type: none;}
+.contact img{list-style-type: none;}
+
+.pointti {margin-bottom: 3ex; margin-top: 3ex;box-sizing: border-box; }
+.line {border-top: 1px solid lightgray; padding-bottom: 10px;}
+.fig {float: left; padding: 10px 10px 0 0;}
