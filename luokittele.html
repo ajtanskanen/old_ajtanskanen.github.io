@@ -13174,7 +13174,7 @@ Osumistarkkuus 57.19990237991045 %
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Menev&#228;tk&#246;-puolueet-sekaisin?">Menev&#228;tk&#246; puolueet sekaisin?<a class="anchor-link" href="#Menev&#228;tk&#246;-puolueet-sekaisin?">&#182;</a></h2><p>Kun malli on sovitettu, testataan miten hyvin se toimii. 
-Malli ennustaa keskimäärin 57 prosentin (vaihteluväli 56 - 59 prosenttia) tarkkuudella ehdokkaan puolueen täsmälleen oikein, ehdokkaan vastausten perusteella. Kun aineistossa on 21 puoluetta, on tarkkuus kohtuullinen.</p>
+Malli ennustaa keskimäärin 57 prosentin (vaihteluväli 54 - 60 prosenttia) tarkkuudella ehdokkaan puolueen täsmälleen oikein, ehdokkaan vastausten perusteella. Kun aineistossa on 21 puoluetta, on tarkkuus kohtuullinen.</p>
 <p>Katsotaan ensin, menevätkö puolueet sekaisin vastausten perusteella. Tätä voi tarkastella nk. Sekaannusmatriisilla (engl. Confusion matrix), joka näyttää missä määrin ennusteet menevät kohdalleen.</p>
 <p>Pystyakselilla on ehdokkaan oikea puolue, vaaka-akselilla vastauksista ennustettu puolue. Jos kaikki ennusteet olisivat täydellisiä, lukuja olisi vain matriisin diagonaalilla. Kaikki diagonaalin ulkopuolella oleva ennusteet ovat vääriä.</p>
 <p>Luokittelijan mielestä esimerkiksi Keskustan ehdokkaista asemoituu mielipiteidensä puolesta 10 Kokoomukseen, 23 Kristillisdemokraatteihin ja 9 SDP:hen. Ehkä erikoisin tulos on Sinisellä tulevaisuudella, jonka ehdokkaista suurin osa sijoittuu luokittelijan mielestä muualle kuin Siniseen tulevaisuuteen.</p>
@@ -13448,10 +13448,10 @@ vastasivat puolueiden kantoja?</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Tarkkuus paranee merkittävästi. Nyt jo 85 prosenttia ennusteista on täsmälleen oikein, osalla puolueista kaikki.</p>
 <p>Yksittäisistä puolueista näkyy, että jopa 16 prosenttia Keskustalaisista voisi olla Kristillisdemokraateissa mielipiteidensä perusteella luokiteltuna. Hieman yllättäen "vuoto" Vasemmistoliitosta Vihreisiin katoaa. Kuitenkin "vuoto" Vihreistä Vasemmistoliittoon säilyy ennallaan.</p>
-<p>Sitoutumaton edustaja tulee Ahvenanmaalta. Ahvenanmaan edustaja kuuluu RKP:n ryhmään, joten hänen luokittelunsa menee täysin oikein. Muuten yllättävän suuri osa RKP:läisistä voisi olla Keskustassa.</p>
+<p>Sitoutumaton edustaja tulee Ahvenanmaalta. Ahvenanmaan edustaja kuuluu RKP:n ryhmään, mutta luokittelija sijoittaa hänet SDP:hen. Vastaavasti 19 prosenttia Vasemmistoliiton edustajista luokitellaan SDP:hen. Yllättävän suuri osa RKP:läisistä voisi olla Keskustassa tai Kokoomuksessa.</p>
 <h2 id="Kehityskohteita">Kehityskohteita<a class="anchor-link" href="#Kehityskohteita">&#182;</a></h2><p>Mallia olisi melko helppo paranta sovittamalla LightGBM:n parametrejä paremmin (esim. Hyperopt:lla), muista menetelmistä puhumattakaan. Myös analysoimalla erilaisin menetelmin vapaisiin kenttiin annettuja vastauksia (esim. word2vec:llä) olisi tuloksia parannettavissa.</p>
 <h1 id="Yhteenveto">Yhteenveto<a class="anchor-link" href="#Yhteenveto">&#182;</a></h1><p>Tulokset näyttävät, että pelkästään katsomalla  eduskuntavaaliehdokkaiden vastauksia vaalikoneen kysymyksiin voi päätellä heidän puolueensa melko tarkasti. Ehdokkaista osa päätyy luokitelluksi väärään puolueeseen, erityisesti sellaisten puolueiden ehdokkaista, jotka eivät läpi päässeet. Eduskuntaan valittujen ehdokkaiden vastauksista voi päätellä heidän puolueensa ilman mitään muita tietoja erittäin hyvin. Tämä ehkä kertoo siitä, että valitut ehdokkaat edustavat hyvin puolueiden arvoja.</p>
-<p>Tuloksissa on myös kiinnostavia väärin luokiteltuja ehdokkaita, esimerkiksi Ahvenanmaan sitoutumaton edustaja luokitellaan väärin RKP:hen.</p>
+<p>Tuloksissa on myös kiinnostavia väärin luokiteltuja ehdokkaita, esimerkiksi osa Keskustan edustajista luokitellaan Kristillisdemokraatteihin ja osa Vasemmistoliiton edustajista luokitellaan SDP:hen.</p>
 
 </div>
 </div>
