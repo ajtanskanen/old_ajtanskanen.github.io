@@ -13139,6 +13139,7 @@ Aineiston avulla voi esimerkiksi arvioida, miten hyvin ehdokkaiden vastaukset ku
 <p>Luokittelija opetetaan Ylen vaalikonedatan avulla. Aineistosta valitaan helppouden vuoksi vain monivalintakysymykset. Tällöin vapaat vastaukset jäävät pois. Myös ikä, äidinkieli ja valinta Eduskuntaan jätetään aineistosta pois.</p>
 <p>Tarkoitus on ennustaa vastauksista kaikille esitettyihin kysymyksiin annettujen vastausten perusteella ehdokkaiden puolue. Tästä syystä alueelliset kysymykset on rajattu pois. Jäljelle jää 29 kysymystä, joiden perusteella ehdokkaiden puoluekanta ennustetaan.</p>
 <p>Koska kiinnostus kohdistuu siihen, miten hyvin malli ennustaa, jaetaan data opetus- ja testiaineistoon. Opetusaineistolla koulutetaan luokittelija, ja sen ennustusvoimaa arvioidaan testiaineiston ennusteiden avulla (out of sample). Toistetaan sama viisi kertaa niin, että otetaan aineistosta 80 % opetusaineistoksi ja 20 % testiaineistoksi. Tällöin saamme out-of-sample ennusteen kaikille ehdokkaille.</p>
+<p>Luokittelija käyttää ainoana tietona vaalikoneen dataa, mitään muuta aineistoa ei käytetä. Ensin se etsii opetusaineistosta tiedon siitä, mitkä tekijät kuvaavat mitäkin puoluetta, ja tämän jälkeen se ennustaa testiaineiston vastauksista testiaineistossa olevien ehdokkaiden puoluekannan.</p>
 <p>Sovitetaan aluksi malli.</p>
 
 </div>
