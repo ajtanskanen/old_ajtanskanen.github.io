@@ -13123,8 +13123,8 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>14.5.2019</p>
-<h1 id="Voiko-vaalikoneen-vastauksista-ennustaa-ehdokkaan-puolueen?">Voiko vaalikoneen vastauksista ennustaa ehdokkaan puolueen?<a class="anchor-link" href="#Voiko-vaalikoneen-vastauksista-ennustaa-ehdokkaan-puolueen?">&#182;</a></h1><h2 id="Antti-J.-Tanskanen">Antti J. Tanskanen<a class="anchor-link" href="#Antti-J.-Tanskanen">&#182;</a></h2><p>Yle on julkaissut Eduskuntavaaleja varten tehdyn Ylen vaalikoneen aineiston avoimena datana (<a href="https://vaalikone.yle.fi/eduskuntavaalit2019">https://vaalikone.yle.fi/eduskuntavaalit2019</a>). 
-Aineistossa on mukana Eduskuntavaalien ehdokkaille esitetyt väitteet, perustiedot ehdokkaista (tosin ilman nimiä) ja ehdokkaiden vastaukset.</p>
+<h1 id="Voiko-vaalikoneen-vastauksista-ennustaa-ehdokkaan-puolueen?">Voiko vaalikoneen vastauksista ennustaa ehdokkaan puolueen?<a class="anchor-link" href="#Voiko-vaalikoneen-vastauksista-ennustaa-ehdokkaan-puolueen?">&#182;</a></h1><h2 id="Antti-J.-Tanskanen">Antti J. Tanskanen<a class="anchor-link" href="#Antti-J.-Tanskanen">&#182;</a></h2><p>Yle on julkaissut Eduskuntavaaleja varten tehdyn Ylen vaalikoneen aineiston avoimena datana (<a href="https://vaalikone.yle.fi/">https://vaalikone.yle.fi/</a>). 
+Aineistossa on mukana noin 2 200 Eduskuntavaalien ehdokkaalle esitetyt väitteet, perustiedot ehdokkaista (tosin ilman nimiä) ja ehdokkaiden vastaukset.</p>
 <p>Aineiston avulla voi esimerkiksi arvioida, miten hyvin ehdokkaiden vastaukset kuvastavat puoluetta, jota he edustavat. Tämä on tavoitteena tässä blogissa, jossa rakennetaan  koneoppimista hyödyntäen luokittelija. Luokittelija katsoo, mitä ehdokas vastasi vaalikoneen väitteisiin, ja sen perusteella arvioi mihin puolueeseen ehdokas kuuluu.</p>
 <p>Luokittelutulokset osoittavat, että Eduskuntaan valittujen ehdokkaiden puoluekanta on helpompi päätellä vastauksista kuin kaikkien ehdokkaiden. Kiinnostavaa on myös se, minkä puolueiden kohdalla luokittelija ei onnistu ennustamaan ehdokkaiden puoluekantaa. Tämä saattaa kertoa siitä, että ko. puolueissa on erilaisia näkösuuntia tai vakiintumaton ideologia. Tiedämme esimerkiksi, että RKP:ssä yhdistävä tekijä on ruotsinkieli vahvemmin kuin mikään poliittinen ideologia, jolloin voi odottaa etteivät RKP:n ehdokkaat ole kovin yhtenäisiä vastauksissaan.</p>
 <p>Malli laittaa myös vaalikonedatan väitteet luokittelun osalta tärkeysjärjestykseen. Tärkeimpänä puolueita erottavana väitteenä näyttäytyy "Euron ulkopuolella Suomi pärjäisi paremmin".</p>
@@ -13404,6 +13404,7 @@ Osumistarkkuus 70.81386924271176 %
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Eduskuntaan-valitut">Eduskuntaan valitut<a class="anchor-link" href="#Eduskuntaan-valitut">&#182;</a></h1><p>Entä jos tarkastellaan ylläsovitettuja malleja vain Eduskuntaan valittujen osalta? Miten hyvin heidän mielipiteensä 
 vastasivat puolueiden kantoja?</p>
+<p>Tarkkuus paranee merkittävästi. Nyt jo 85 prosenttia ennusteista on täsmälleen oikein, osalla puolueista kaikki.</p>
 
 </div>
 </div>
@@ -13447,9 +13448,8 @@ vastasivat puolueiden kantoja?</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Tarkkuus paranee merkittävästi. Nyt jo 85 prosenttia ennusteista on täsmälleen oikein, osalla puolueista kaikki.</p>
 <p>Yksittäisistä puolueista näkyy, että noin 13 prosenttia Keskustalaisista voisi olla Kristillisdemokraateissa mielipiteidensä perusteella luokiteltuna. Hieman yllättäen tässä kuviossa "vuoto" Vasemmistoliitosta Vihreisiin katoaa. Kuitenkin "vuoto" Vihreistä Vasemmistoliittoon säilyy ennallaan.</p>
-<p>Sitoutumaton edustaja tulee Ahvenanmaalta. Ahvenanmaan edustaja kuuluu RKP:n ryhmään, mutta luokittelija sijoittaa hänet SDP:hen. Vastaavasti 19 prosenttia Vasemmistoliiton edustajista luokitellaan SDP:hen. Yllättävän merkittävä osuus RKP:läisistä voisi olla Keskustassa tai Kokoomuksessa.</p>
+<p>Sitoutumaton edustaja tulee Ahvenanmaalta. Ahvenanmaan edustaja kuuluu Ruotsalaiseen ryhmään (yhdessä RKP:n edustajien kanssa), mutta luokittelija sijoittaa hänet SDP:hen. Vastaavasti 19 prosenttia Vasemmistoliiton edustajista luokitellaan SDP:hen. Yllättävän merkittävä osuus RKP:läisistä voisi olla Keskustassa tai Kokoomuksessa.</p>
 <h2 id="Kehityskohteita">Kehityskohteita<a class="anchor-link" href="#Kehityskohteita">&#182;</a></h2><p>Mallia olisi melko helppo parantaa sovittamalla LightGBM:n parametrejä paremmin (esim. Hyperopt:lla), muista menetelmistä puhumattakaan. Myös analysoimalla erilaisin menetelmin vapaisiin kenttiin annettuja vastauksia (esim. word2vec:llä) olisi tuloksia parannettavissa.</p>
 <h1 id="Yhteenveto">Yhteenveto<a class="anchor-link" href="#Yhteenveto">&#182;</a></h1><p>Tulokset näyttävät, että pelkästään katsomalla eduskuntavaaliehdokkaiden vastauksia vaalikoneen väittämiin voi päätellä heidän puolueensa melko tarkasti. Ehdokkaista osa päätyy luokitelluksi väärään puolueeseen, erityisesti sellaisten puolueiden ehdokkaista, jotka eivät läpi päässeet. Eduskuntaan valittujen ehdokkaiden vastauksista voi päätellä heidän puolueensa ilman mitään muita tietoja erittäin hyvin. Tämä ehkä kertoo siitä, että valitut ehdokkaat edustavat hyvin puolueiden arvoja.</p>
 <p>Tuloksissa on myös kiinnostavia väärin luokiteltuja ehdokkaita, esimerkiksi osa Keskustan edustajista luokitellaan Kristillisdemokraatteihin ja osa Vasemmistoliiton edustajista luokitellaan SDP:hen.</p>
